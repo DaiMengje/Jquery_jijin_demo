@@ -1,0 +1,47 @@
+@keyframes boxMoveLeft {
+    50% {
+        left: 190px;
+    }
+    100% {
+        left: 0
+    }
+}
+
+@keyframes boxMoveRight {
+    50% {
+        right: 190px;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+.enterBox .title {
+    width: 180px;
+}
+
+.main li {
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+}
+
+.main li input {
+    height: 20px;
+    border-inline: normer;
+    outline: none;
+}
+
+.submitBtn {
+    width: 80px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+}

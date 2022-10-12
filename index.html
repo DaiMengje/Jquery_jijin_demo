@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="./CSS/commen.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+
+    <!-- <link rel="stylesheet" href="./register.css"> -->
+    <script src="./JS/jQuery.js"></script>
+</head>
+
+<body>
+    <!-- 顶部旋转星球 -->
+    <div class="starbox">
+        <!-- 外圈 -->
+        <div class="star-earth">
+            <div class="earth">
+                <div class="sm-earth"></div>
+            </div>
+        </div>
+        <!-- 中圈 -->
+        <div class="star-yellow">
+            <div class="yellow-land"></div>
+        </div>
+        <!-- 内圈 -->
+        <div class="star-blue">
+            <div class="blue-land"></div>
+        </div>
+        <!-- 太阳 -->
+        <div class="sun"></div>
+    </div>
+    <div class="questionbox">
+        <p>首次登录请务必先填写问卷</p>
+        <h3>风险调查</h3>
+        <span>您的风险能力-请选择提供的选项之一，尽可能准确地回答以下所有问题</span>
+        <ul>
+            <li>
+                <div>1.你的总金融资产中有多少比例可用于投资（免费资产），因此不需要支付定义的负债或未来的具体计划?</div>
+                <p>
+                    <label><input type="radio" value="1" name="q1"><i>少于20%</i></label>
+                    <label><input type="radio" value="2" name="q1"><i>在20%到40%之间</i></label>
+                    <label><input type="radio" value="3" name="q1"><i>在40%到60%之间</i></label>
+                    <label><input type="radio" value="4" name="q1"><i>在60%到90%之间</i></label>
+                    <label><input type="radio" value="5" name="q1"><i>超过90%</i></label>
+                </p>
+            </li>
+            <li>
+                <div>2.从现在起，你不太可能需要大量资金从你的自由资产?(你的帐户可能还包括一些较长或较短的产品)?</div>
+                <p>
+                    <label><input type="radio" value="3" name="q2"><i>少于3年</i></label>
+                    <label><input type="radio" value="6" name="q2"><i>在3到5年之间</i></label>
+                    <label><input type="radio" value="9" name="q2"><i>在5到8年之间</i></label>
+                    <label><input type="radio" value="12" name="q2"><i>在8到12年之间</i></label>
+                    <label><input type="radio" value="15" name="q2"><i>超过12年</i></label>
+                </p>
+            </li>
+            <li>
+                <div>3.你打算在多大程度上使用你的免费资产来资助你退休后的生活水平？</div>
+                <p>
+                    <label><input type="radio" value="1" name="q3"><i>全部或大部分(60%以上%)</i></label>
+                    <label><input type="radio" value="2" name="q3"><i>在30%到60%之间</i></label>
+                    <label><input type="radio" value="3" name="q3"><i> 低于30%</i></label>
+                    <label><input type="radio" value="4" name="q3"><i>无(0%)</i></label>
+                </p>
+            </li>
+            <li>
+                <div>4.与你的自由资产相比，你每年的储蓄（收入减去支出）是多少？</div>
+                <p>
+                    <label><input type="radio" value="1" name="q4"><i>低(小于2%)</i></label>
+                    <label><input type="radio" value="2" name="q4"><i>（2%至5%之间%）</i></label>
+                    <label><input type="radio" value="3" name="q4"><i>中等（5%至10%之间%）</i></label>
+                    <label><input type="radio" value="4" name="q4"><i>相当高（在10%到20%之间%）</i></label>
+                    <label><input type="radio" value="5" name="q4"><i>高（20%以上%）</i></label>
+                </p>
+            </li>
+            <li>
+                <div>5.假设你没有年收入（来自职业或投资），你能用你的免费资产为你目前的生活水平提供多长时间的资金？</div>
+                <p>
+                    <label><input type="radio" value="1" name="q5"><i>少于2年</i></label>
+                    <label><input type="radio" value="2" name="q5"><i>在2至6年之间 </i></label>
+                    <label><input type="radio" value="3" name="q5"><i>在6到10年之间 </i></label>
+                    <label><input type="radio" value="4" name="q5"><i>在10年到15年之间 </i></label>
+                    <label><input type="radio" value="5" name="q5"><i>超过15年</i></label>
+                </p>
+            </li>
+            <li>
+                <div>6.如果您的任何免费资产，您需要使用您的未来负债或计划(例如。 房地产购买、商业投资、贷款偿还)?</div>
+                <p>
+                    <label><input type="radio" value="3" name="q6"><i>多数（75%以上%）</i></label>
+                    <label><input type="radio" value="6" name="q6"><i>在75%到40%之间%</i></label>
+                    <label><input type="radio" value="9" name="q6"><i>在40%到20%之间%</i></label>
+                    <label><input type="radio" value="12" name="q6"><i>在20%到0%之间%</i></label>
+                    <label><input type="radio" value="15" name="q6"><i>无负债或计划（0%）</i></label>
+                </p>
+            </li>
+        </ul>
+        <div class="submitBtn" id="submitquestion">提交问卷</div>
+        <div class="submitBtn" id="closequestion">关闭</div>
+
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="welcome">
+                <div class="name">Welcome: <span id="username">未登录</span></div>
+                <div class="level">
+                    <p>您的风险等级为:<span id="level">暂无</span></p>
+                    <div class="submitBtn" id="resetQuestion">重新答卷</div>
+
+                </div>
+            </div>
+            <div class="indexOut">
+                <div class="outBtn">退出登陆</div>
+            </div>
+        </div>
+        <div class="main">
+            <ul>
+                <li>
+                    <h2>推荐基金</h2>
+                    <div class="list" id="recommend">
+                    </div>
+                    <div class="commonbtn">刷新</div>
+                    <div class="commonbtn" id="resetList">重置</div>
+                </li>
+                <li>
+                    <h2>基金配比</h2>
+                    <div class="list" id="ratioList">
+
+                    </div>
+                    <div class="commonbtn" style="width: 86px;margin-left :-43px;">购买入仓</div>
+                </li>
+                <li>
+                    <h2>持仓资产</h2>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="addBox">
+        <h3>请输入添加份数(至少添加一份)</h3>
+        <input type="text" placeholder="请输入整数">
+        <div class="addBox-btn">
+            <div class="commonbtn" id="cannotBtn">取消</div>
+            <div class="commonbtn" id="couseBtn">确认添加</div>
+        </div>
+    </div>
+    <script src="./JS/commen.js"></script>
+    <script src="./JS/data.js"></script>
+    <script src="./JS/index.js"></script>
+
+</body>
+
+</html>

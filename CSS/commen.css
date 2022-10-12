@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+i {
+    font-style: normal;
+}
+
+body {
+    font: normal 1em/1.45em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    background: radial-gradient(ellipse at bottom, #1C2837 0%, #050608 100%);
+    background-attachment: fixed;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+
+/* js中页面星星生成的盒子 */
+
+.shadowBox {
+    width: 4px;
+    height: 4px;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.submitBtn {
+    width: 80px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+}
+
+
+/* 顶部旋转星球start */
+
+.starbox {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+}
+
+@keyframes starRotate {
+    100% {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+}
+
+.starbox>div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.star-earth {
+    width: 190px;
+    height: 190px;
+    border: 1px solid #3c3d5d;
+    animation: starRotate 10s linear infinite;
+}
+
+.star-earth::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 50%;
+    top: 0px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 5px 0px 0px blue inset;
+    background-color: rgb(100, 100, 245);
+}
+
+.starbox .earth {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 50%;
+    top: 0px;
+    transform: translate(-50%, -50%);
+    background-color: blue;
+    animation: starRotate 5s linear infinite;
+}
+
+.starbox .earth .sm-earth {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    left: 50%;
+    top: -10px;
+    transform: translate(-50%);
+    background-color: rgb(184, 139, 139);
+}
+
+.star-yellow {
+    width: 140px;
+    height: 140px;
+    border: 1px solid #3c3d5d;
+    animation: starRotate 6s linear infinite;
+}
+
+.starbox .yellow-land {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 50%;
+    top: -6px;
+    transform: translate(-50%);
+    background-color: yellow;
+}
+
+.star-blue {
+    width: 110px;
+    height: 110px;
+    border: 1px solid #3c3d5d;
+    animation: starRotate 7s linear infinite;
+}
+
+.starbox .blue-land {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 50%;
+    top: -6px;
+    transform: translate(-50%);
+    background-color: blue;
+}
+
+.sun {
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(ellipse at center, #ffd000 1%, #f9b700 39%, #f9b700 39%, #e06317 100%);
+    box-shadow: 0px 0px 10px 0px #e06317;
+}
+
+.starbox div {
+    border-radius: 50%;
+}
+
+
+/* 顶部旋转星球end */
+
+
+/* 遮罩层star */
+
+.shadowbody {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 0 0 0.3);
+    z-index: 99;
+}
+
+.shadowbox {
+    position: relative;
+    width: 300px;
+    height: 170px;
+    margin: 150px auto;
+    background-color: #000;
+}
+
+.shadowbox::before,
+.shadowbox::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    box-sizing: border-box;
+}
+
+@keyframes playtr {
+    50% {
+        width: 100%;
+        height: 0;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@keyframes playbl {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    50% {
+        width: 0;
+        height: 0;
+    }
+    75% {
+        width: 100%;
+        height: 0;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.shadowbox::before {
+    border-top: 2px solid #318fff;
+    border-right: 2px solid #318fff;
+    animation: playtr 0.5s linear forwards;
+}
+
+.shadowbox::after {
+    right: 0;
+    bottom: 0;
+    border-bottom: 2px solid #318fff;
+    border-left: 2px solid #318fff;
+    animation: playbl 1s linear forwards;
+}
+
+.shadowtitle {
+    text-align: center;
+    color: #318fff;
+    padding-top: 50px;
+}
+
+.commonbtn {
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -33px;
+    width: 60px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    border: 2px solid #318fff;
+    color: #318fff;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.commonbtn:hover {
+    background-color: #318fff;
+    color: #fff;
+    box-shadow: 0 0 7px 0 #74b0fa;
+}
+
+
+/* 遮罩层end */
+
+
+/* 注册start */
+
+.enterBox {
+    position: relative;
+    width: 600px;
+    min-height: 200px;
+    padding: 50px 25px;
+    margin: 20px auto;
+    margin-bottom: 150px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+}
+
+.enterBox h2 a {
+    float: right;
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+.enterBox .title {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #282c40;
+    text-align: center;
+    line-height: 40px;
+    font-size: 19px;
+    text-shadow: 0 0 6px #fff;
+}
+
+.enterBox::after,
+.enterBox::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 18px;
+    height: 8px;
+    margin-top: -4px;
+    background-color: #3da4e8;
+    box-shadow: 0 0 2px 1px #fff;
+}
+
+.enterBox::after {
+    left: 0;
+}
+
+.enterBox::before {
+    right: 0;
+}
+
+.enterBox::after {
+    animation: boxMoveLeft 2s linear infinite;
+}
+
+.enterBox::before {
+    animation: boxMoveRight 2s linear infinite;
+}

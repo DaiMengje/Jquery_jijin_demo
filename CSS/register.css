@@ -1,0 +1,121 @@
+@keyframes boxMoveLeft {
+    50% {
+        left: 180px;
+    }
+    100% {
+        left: 0
+    }
+}
+
+@keyframes boxMoveRight {
+    50% {
+        right: 180px;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+.enterBox h2 {
+    font-weight: normal;
+}
+
+.baise {
+    color: #fff;
+    font-size: 14px;
+    /* text-decoration: underline; */
+    font-weight: normal;
+}
+
+
+/* .enterBox h2 a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: underline;
+} */
+
+.login {
+    text-align: center;
+    color: #bbb;
+    margin-top: 10px;
+}
+
+.login ol {
+    margin: 10px 0 0 35px;
+    font-size: 13px;
+}
+
+.main .node {
+    color: #3da4e8;
+    font-weight: 700;
+    margin-left: 100px;
+    text-align: left;
+}
+
+.main>ul>li {
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+}
+
+.main li input {
+    height: 20px;
+    outline: none;
+}
+
+.main .lastNode {
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+.lastNode li {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.lastNode li:first-child {
+    margin: 20px 0;
+}
+
+.lastNode h4 {
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.lastNode p {
+    font-size: 14px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.lastNode p input {
+    vertical-align: middle;
+    margin: 0 2px 0 10px;
+}
+
+.file {
+    font-weight: normal;
+    color: #0ff;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+#agree {
+    vertical-align: middle;
+}
+
+
+/* .submitBtn {
+    width: 80px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+} */

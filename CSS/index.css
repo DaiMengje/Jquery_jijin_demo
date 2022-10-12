@@ -1,0 +1,220 @@
+.questionbox {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    width: 1500px;
+    height: 880px;
+    transform: translateX(-50%);
+    background-color: #222939;
+    text-align: center;
+    padding-top: 30px;
+    z-index: 99;
+}
+
+label,
+input {
+    cursor: pointer;
+}
+
+.questionbox h3 {
+    color: #318fff;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.questionbox span {
+    display: block;
+    font-size: 13px;
+    color: red;
+    margin-bottom: 50px;
+}
+
+.questionbox li {
+    margin-top: 22px;
+}
+
+.questionbox li div {
+    color: #318fff;
+    margin-bottom: 16px;
+}
+
+.questionbox li i {
+    margin-right: 10px;
+}
+
+#closequestion {
+    position: fixed;
+    width: 50px;
+    height: 30px;
+    top: -20px;
+    right: 0px;
+    border-radius: 0;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1800px;
+    height: 800px;
+    padding-top: 10px;
+    /* background-color: #fff; */
+}
+
+.container .header {
+    height: 190px;
+    /* flax布局  牛逼 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .outBtn {
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 6px;
+    background-color: #318fff;
+    cursor: pointer;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+}
+
+.welcome .name {
+    font-size: 29px;
+    color: #318fff;
+    margin-right: 80px;
+}
+
+
+/* main主体盒子 */
+
+.main {
+    margin-top: 40px;
+}
+
+.main ul {
+    width: 1820px;
+}
+
+.main li {
+    float: left;
+    position: relative;
+    width: 592px;
+    height: 600px;
+    border: 2px solid #3797ea;
+    border-radius: 10px;
+}
+
+.main li:nth-child(2) {
+    margin: 0 10px;
+}
+
+.main li:nth-child(1) .commonbtn {
+    transform: translate(-53%);
+}
+
+.main li:nth-child(1) .commonbtn:last-child {
+    transform: translate(53%);
+}
+
+.main h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main .item {
+    font-size: 14px;
+    padding: 0 20px;
+    height: 45px;
+    line-height: 45px;
+}
+
+.item:hover {
+    background-color: rgba(99, 189, 248, .3);
+}
+
+.main a {
+    color: #fff;
+}
+
+.main .item b,
+.main .item span {
+    color: #318fff;
+    margin-left: 30px;
+}
+
+.main .item em,
+.main .item span {
+    cursor: pointer;
+}
+
+.main .item i {
+    color: #318fff;
+    cursor: pointer;
+}
+
+.main .item strong {
+    font-weight: normal;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.main .item em {
+    color: #666;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.main .item em:hover {
+    color: red;
+}
+
+.main .item span:hover {
+    color: #fff;
+}
+
+.addBox {
+    display: none;
+    position: fixed;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 320px;
+    /* background-color: #fff; */
+    background-color: rgba(0, 0, 0, .9);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.addBox h3 {
+    margin: 50px 0;
+}
+
+.addBox input {
+    width: 320px;
+    height: 35px;
+    font-size: 22px;
+    /* padding-left: 15px; */
+    text-align: center;
+    cursor: text;
+    outline: none;
+}
+
+.addBox .addBox-btn :first-child {
+    transform: translate(-60%);
+    margin-bottom: 40px;
+}
+
+.addBox .addBox-btn :last-child {
+    transform: translate(60%);
+    margin-bottom: 40px;
+}
