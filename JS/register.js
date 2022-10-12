@@ -35,9 +35,5 @@ $('.submitBtn').click(function() {
     } else {
         localStorage.userList = JSON.stringify([user])
     }
-    // 跳转页面,回调函数
-    dialog('注册成功', function() {
-
-        location.href = './login.html'
-    })
+     location.href = './login.html'
 })
